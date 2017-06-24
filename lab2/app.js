@@ -59,7 +59,7 @@ class Cart {
 
     // remove an item from shopping cart
     removeItem (item) {
-       
+     
         if (this.items != null) {
             var updated_list = [];
             var to_compare = item[0];
@@ -95,10 +95,10 @@ class Cart {
         } else if (this.items.length == 0) {
             tbody.innerHTML +=
             `<tr class="cart-table">
-                <td class="cart-table">
-                    <h3>Add something on the cart</h3>
-                    
-                </td>
+            <td class="cart-table">
+            <h3>Add something on the cart</h3>
+            
+            </td>
             </tr>`; 
             return;
         }
@@ -107,20 +107,20 @@ class Cart {
             var item_name = this.items[i][0];
             
             var item_price = Number(this.items[i][1]);
-
+            
             tbody.innerHTML +=
-                `<tr class="cart-table">
-                    <td class="cart-table">
-                        <h4>${item_name}</h4>
-                        
-                    </td>
-                    <td class="cart-table">
-                        <h4>${item_price}</h4>
-                    </td>
-                    <td class="cart-table">
-                        <button class="remove_button" data-name=${item_name} data-index=${i}>Remove From cart!</button>
-                    </td>
-                </tr>`;
+            `<tr class="cart-table">
+            <td class="cart-table">
+            <h3>${item_name}</h3>
+            
+            </td>
+            <td class="cart-table">
+            <h3>${item_price}</h3>
+            </td>
+            <td class="cart-table">
+            <button class="remove_button" data-name=${item_name} data-index=${i}>Remove From cart!</button>
+            </td>
+            </tr>`;
         }
 
         
@@ -135,50 +135,49 @@ class Cart {
         }
         
 
-       
-
+        
     }
 }    
 
 class RemoveButton {
     constructor(root, store, cart) {
-            this.root = root;
-            this.store = store;
-            this.cart = cart;
-            this.onClick = () => this.cart.removeItem(this.root.dataset.name);
-            this.init();
-        }
+        this.root = root;
+        this.store = store;
+        this.cart = cart;
+        this.onClick = () => this.cart.removeItem(this.root.dataset.name);
+        this.init();
+    }
 
-        init () {
-            this.root.addEventListener("click", this.onClick);
-        }
+    init () {
+        this.root.addEventListener("click", this.onClick);
+    }
 
-        destroy () {
-            this.root.removeEventListener("click", this.onClick);
-        }
+    destroy () {
+        this.root.removeEventListener("click", this.onClick);
+    }
 
 }
 
 class ClearStatusButton {
     constructor(root, store, cart) {
-            this.root = root;
-            this.store = store;
-            this.cart = cart;
-            this.onClick = () => this.clearStatuses();
-            this.init();
-        }
+        this.root = root;
+        this.store = store;
+        this.cart = cart;
+        this.onClick = () => this.clearStatuses();
+        this.init();
+    }
 
-        init () {
-            this.root.addEventListener("click", this.onClick);
-        }
+    init () {
+        this.root.addEventListener("click", this.onClick);
+    }
 
-        destroy () {
-            this.root.removeEventListener("click", this.onClick);
-        }
+    destroy () {
+        this.root.removeEventListener("click", this.onClick);
+    }
 
-        clearStatuses() {
-            let status = document.querySelector(".status_table");  
-        }
+    clearStatuses() {
+        let status = document.querySelector(".status_table");  
+    }
 }
 
 class CheckoutButton {
