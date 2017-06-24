@@ -133,13 +133,7 @@ class Cart {
                 this.removeItem(item);
             });
         }
-        /* Eric's help from Slack that works, but I'm currently using my own implementation...
-        removeButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                let item = this.items[parseInt(btn.dataset.index)];
-                this.removeItem(item);
-            });
-        });*/
+        
 
        
 
