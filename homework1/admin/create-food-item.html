@@ -1,0 +1,65 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<body bgcolor="#E6E6FA">
+			<meta charset="UTF-8">
+			<title></title>
+			<link rel="stylesheet" href="stylesheet.css">
+		</head>
+		<header class="clearfix">
+			<nav> 
+			    <a href="../menu.html">Menu</a>
+				<a href="create-food-item.html">Create food</a>
+				<a href="inventory.html">Inventory</a>
+				
+			</nav>	
+			<img  src="http://nebula.wsimg.com/38c7cffac476fc379ec83d5ec7f94485?AccessKeyId=ED591A06CCEC51484249&disposition=0&alloworigin=1" alt="logo"/>
+			<h1>Tom's #1 World Famous Chiliburgers</h1>
+		</header>	
+		<br/>
+		<br/>
+		<main>
+			<h2>
+				Add new food
+			</h2>
+<form id="addfoodform">
+			<fieldset>
+				<legend><h2>Create a new Item</h2></legend>
+			<table>
+					<tr>
+						<td>
+							<h4>Food Name:</h4>
+							<input type="text" name="name" id="food_name"></input>
+							<br><br>
+							<h4>Image Link:</h4>
+							<input type="url" id="food_image" value="https://previews.123rf.com/images/piren/piren0904/piren090400042/4720569-empty-dish-fork-and-knife-Stock-Photo-plate-cutlery-diner.jpg" alt="" height="60" width="60">
+							
+							<br><br>
+							<h4>food  Description:</h4>
+							<input type="text" id="food_description" name="description" rows="10"></input>
+						</td>
+						<td>
+                         <h4>Ingridients:</h4>
+                         <ul><li>Beef</li>
+                         <li>Cheese</li>
+                         <li>Chili</li>
+                          <li>Fries</li></ul>
+
+
+							<input type="text" name="Ingridients" id="food_ingridients"></input>
+							<br><br>
+						<td>
+							<button id="addfood" type="button">Create Food!</button>
+						</td>
+					</tr>
+				</table>
+					</fieldset>
+		</form>
+			</main>
+
+			<footer>
+				© 2017 Tom's #1 World Famous Chiliburgers Inc.,All Rights Reserved
+			</footer>
+			<script src="app.js"></script>
+		</body>
+		</html>
