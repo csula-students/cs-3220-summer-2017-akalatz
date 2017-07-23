@@ -1,0 +1,167 @@
+	
+		.logo{
+			width:100px;
+			height:80 px;
+			margin-left:2em;
+			position: absolute; 
+			top: 0; 
+			left: 0;  
+			display:inline-block;
+			padding:1rem;
+			
+			@media(max-width: 480px) {
+		display: flex;
+		justify-content: space-around;
+			
+
+		}
+			
+		}
+		.cafe-name{
+		text-align: center;
+		display: flex;
+		justify-content:center;
+		 
+		 	@media(max-width: 480px) {
+		display: flex;
+		justify-content: space-around;
+			
+
+		
+		}
+			
+
+		}
+
+		h1{
+			text-align: center;
+		}
+		
+		header{
+			
+				max-width:100 %;
+				margin:0 auto;
+				display:flex;
+				justify-content: space-around;
+				@media(max-width: 480px) {
+		display: flex;
+		justify-content: space-around;
+			
+
+		}
+				
+			
+		}
+		.hyperlinks{
+			position: absolute; 
+			top: 0; 
+			right: 0;  
+			font-size:16px;
+			text-align:right;
+	        display: felx;
+			padding:1rem;
+			justify-content:flex-end;
+			@media(max-width: 480px) {
+		display: flex;
+		justify-content: space-around;
+			
+
+		}
+		}
+		li{
+			display:inline-block;
+		}
+		body>header selection{
+			display: flex;
+			align-items: center;
+			background-image: url("https://oflocal.co.za/sites/default/files/styles/medium/public/Smokehouse.jpg?itok=0sCv2Of6");
+			filter: opacity(opacity: 30%);
+			justify-content: space-around;
+		}
+		
+		footer {
+			display: flex;
+			justify-content: flex-start;
+			align-items: baseline;
+			  
+			  padding: 1rem;
+			  font-family:Orbitron;
+			  font-size: 20px;
+			 
+				}
+		.boxed{
+			align-items:center;
+			background-color:powderblue;
+			width:100%;
+			height: 120;
+		}
+		
+		main{
+			font-size:20px;
+			font-family:"Courier new";
+			
+		}
+		table {
+			border: 1px 
+			solid #red;
+			text-align:center;
+			width: 100%
+		}
+		tr {
+			font-family: "comic-sans MS";
+			height: 30px;
+			background-color: #4CAF50;
+		}  
+		
+		p{
+			display: flex;
+			justify-content: flex-start;
+			font-family: "Bookman old Style"
+		}
+		
+
+		.Add_food{
+
+			display: flex;
+			justify-content: flex-end;
+			align-items: baseline;
+			font-family: "Arial";
+		}
+
+		.checkoutbutton {
+		    background-color: grey;
+		    padding: 10px 24px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    border-radius: 50%;
+		    border: 2px solid #4CAF50;
+		     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+				}
+
+		.checkoutbutton:hover {background-color: #3e8e41}
+
+			.checkoutbutton:active {
+			  background-color: #3e8e41;
+			  box-shadow: 0 5px #666;
+			  transform: translateY(4px);
+			}
+
+		
+
+
+			button{
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				flex-direction: row-reverse;
+			}
+					@media(max-width: 480px) {
+		body,head {
+			font-size: 14px;
+			background-color="Cyan";
+			}
+
+		}
+	
