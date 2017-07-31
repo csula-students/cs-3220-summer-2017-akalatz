@@ -1,0 +1,186 @@
+header{
+			
+				max-width:100 %;
+				margin:0 auto;
+				display:flex;
+				justify-content: space-around;
+				@media(max-width: 480px) {
+		display: flex;
+		justify-content: space-around;
+			
+
+		}
+				
+			
+		}
+
+.Aheader_image {
+	align-self: right;
+}
+
+
+
+
+
+table, th, td {
+    border: 1px solid black;
+}%;	
+    }
+
+
+ .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+ top:150px;
+    
+}
+
+
+
+  img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-image: #E6E6FA; 
+
+}
+
+ h1 {
+  position: relative;
+  top: 18px;
+  left: 30px;
+}
+ th{
+
+	font-family: verdana,arial,sans-serif;
+	font-size:20px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table,th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table, td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+	text-align: center; 
+}
+
+
+footer {
+     
+  
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: 1rem;
+   text-align: left;  
+   
+}
+td {       
+	text-align: center;       
+	padding: 5px;       
+}
+
+#images_hz {
+width: 960px;
+height: auto;
+overflow: hidden;
+
+  background-image: #E6E6FA; 
+}
+#images_hz img {
+display: inline;
+
+  background-image: #E6E6FA; 
+margin: 0 70px;}
+
+
+h3 {
+
+ display: inline;
+    margin: 0 40px;
+overflow: hidden;
+padding: 30px; 
+
+}
+
+.table2 th{
+
+	font-family: verdana,arial,sans-serif;
+	font-size:20px;
+	color:none;
+	border-width: 1px;
+	border-color: none;
+	border-collapse: collapse;
+}
+.table2 table,.table2 th {
+	
+	padding: 8px;
+	;
+	border-color: none;
+	background-color: #dedede;
+}
+.table2 table, .table2 td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: none;
+	border-color: none;
+	background-color: none;
+	text-align: center; 
+}
+
+.create-food-item table  .create-food-item td {
+border-width: 1px;
+  padding: 8px;
+  border-style: none;
+  border-color: none;
+  background-color: none;
+  text-align: center; 
+}
+
+
+ tr img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+
+}
+.button-checkout  {
+            color: white;
+            border-radius: 16px;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+        }
+
+
+        .button-success1 {
+          
+  background-color: #000000;
+  color: #FFFFFF;
+  float: center;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+        }
+
+
+
