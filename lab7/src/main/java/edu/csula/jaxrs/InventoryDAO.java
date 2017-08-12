@@ -20,8 +20,8 @@ public class InventoryDAO implements DAO<FoodItem> {
                 list.add(new FoodItem(
                     rs.getInt("id"),
                     rs.getString("foodName"),
-                    rs.getString("Description"),
-                    rs.getDouble("Price")
+                    rs.getString("description"),
+                    rs.getDouble("price")
                 ));
             }
         } catch (SQLException e) {
@@ -42,8 +42,8 @@ public class InventoryDAO implements DAO<FoodItem> {
             if (rs.next()) {
                 FoodItem editfood = new FoodItem(rs.getInt("id"),
                                                     rs.getString("foodName"),
-                                                    rs.getString("Description"),
-                                                    rs.getDouble("Price"));
+                                                    rs.getString("description"),
+                                                    rs.getDouble("price"));
                 returnvalue = Optional.of(editfood);
             }
 
@@ -52,14 +52,14 @@ public class InventoryDAO implements DAO<FoodItem> {
         }
         return returnvalue;
     }
-
     public void add(FoodItem entry) {
         Database db = new Database();
         try (Connection c = db.connection()) {
-            PreparedStatement pstmt = c.prepareStatement("INSERT INTO FoodItem (foodName, description, price) VALUES (?, ?, ?)");
-            pstmt.setString(1, entry.getName());
-            pstmt.setString(2, entry.getDescription());
-            pstmt.setDouble(3, entry.getPrice());
+            PreparedStatement pstmt = c.prepareStatement("INSERT INTO FoodItem (id, foodName, description, price) VALUES (?, ?, ?, ?)");
+            pstmt.setInt(1, entry.getId());
+            pstmt.setString(2, entry.getFoodName());
+            pstmt.setString(3, entry.getDescription());
+            pstmt.setFloat(4, (float) entry.getPrice());
             pstmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -72,7 +72,7 @@ public class InventoryDAO implements DAO<FoodItem> {
         try (Connection c = db.connection()) {
             PreparedStatement pstmt = c.prepareStatement("UPDATE FoodItem SET id = ?, foodName = ?, description = ?, price = ? WHERE id = ?");
             pstmt.setInt(1, entry.getId());
-            pstmt.setString(2, entry.getName());
+            pstmt.setString(2, entry.getFoodName());
             pstmt.setString(3, entry.getDescription());
             pstmt.setDouble(4, entry.getPrice());
             pstmt.setInt(5, entry.getId());

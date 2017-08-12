@@ -16,7 +16,7 @@ public class OrderDAO implements DAO<Order> {
         Database db = new Database();
         try (Connection c = db.connection()) {
 
-            // Get information from orders table
+            
             Statement stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM orders ;");
             while (rs.next()) {
@@ -73,7 +73,7 @@ public class OrderDAO implements DAO<Order> {
         Database db = new Database();
         try (Connection c = db.connection()) {
 
-            // insert into ORDERS table
+          
             PreparedStatement pstmt = c.prepareStatement("INSERT INTO orders (order_id, customer_name, status) VALUES (?, ?, ?)");
             pstmt.setInt(1, order.getId());
             pstmt.setString(2, order.getCustomerName());

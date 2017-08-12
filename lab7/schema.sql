@@ -1,4 +1,3 @@
-
  create table FoodItem (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     foodName VARCHAR(255) NOT NULL,
@@ -20,4 +19,3 @@ CREATE TABLE orders (
 INSERT INTO orders (order_id, customer_name, status) VALUES
 (1, 'APOSTOLOS', 'IN PROGRESS'),
 (2, 'DIMITRI', 'IN QUEUE');
-

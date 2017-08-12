@@ -2,7 +2,7 @@ package edu.csula.jaxrs;
 
 public class FoodItem {
 	public final int id;
-	public final String name;
+	public final String foodName;
 	public final String description;
 	public final double price;
 
@@ -10,13 +10,13 @@ public class FoodItem {
 	
 	public FoodItem() {
 		this.id = 0;
-		this.name = "";
+		this.foodName = "";
 		this.description = "";
 		this.price = 0;
 	}
-	public FoodItem (int id, String name, String description, double price) {
+	public FoodItem (int id, String foodName, String description, double price) {
 		this.id = id;
-		this.name = name;
+		this.foodName = foodName;
 		this.description = description;
 		this.price = price;
 	
@@ -26,8 +26,8 @@ public class FoodItem {
 		return id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFoodName() {
+		return foodName;
 	}
 
 	public String getDescription() {
